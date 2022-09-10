@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(2, 95, 64);
+    background-color: rgb(216, 230, 226);
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/* Header and Nav*/
+a {
+    color:rgb(2, 95, 64);
+    text-decoration: none;
+    padding: 2% 3%;
+    margin: 1% 2%;
+    font-size: 0.9rem;
+    /*border: solid 2px rgb(2, 95, 64);*/
+}
+
+a:hover {
+    background-color: rgba(2, 95, 64, 0.238);
+    cursor: pointer;
+}
+nav {
+    padding: 1.5%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 550px){
+    a {
+        font-size: 1.2rem;
+    }
+  }
+/* Banner section */
+
+.banner {
+    background-image: url("./Images/banner.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+#who-are-we {
+    font-size: 0.75rem;
+    background-color: rgba(216, 230, 226, 0.8);
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    padding: 2%;
+    
+}
+
+/*Banners on larger screen sizes */
+@media only screen and (min-width: 450px){
+    .banner {
+        height: 300px;
+    }    
+}
+
+@media only screen and (min-width: 600px){
+    .banner {
+        height: 400px;
+    }    
+    #who-are-we {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 850px){
+    #who-are-we {
+        width: 30%;
+    }
+    
+}
+
+/* Our trips section */
+#our-trips {
+    position: relative;
+    top: 0px;
+    font-size: 0.75rem;
+    padding-top: 50px;
+}
+
+#our-trips p {
+    padding-bottom: 5px;
+}
+
+.trips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    background-image: url("./Images/trips-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.trips h2 {
+    font-size: 1.2rem;
+}
+
+.trip {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    flex-basis: 280px;
+    display: block;
+}
+
+.trip img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding: 10px;
+    height: 180px;
+}
+
+.trip p {
+    padding: 2px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(216, 230, 226, 0.9);
+    z-index: 1;
+
+}
+
+.trip p:hover {
+    background-color: rgba(2, 95, 64, 0.238);
+    cursor: pointer;
+}
+
+/* Meet The Team Section */
+#meet-the-team {
+    position: relative;
+    top: 30px;
+}
+
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Images/meet-the-team-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 0px;
+}
+
+.team-member {
+    padding-top: 50px;
+    flex-basis: 280px;
+    display: block;
+
+}
+
+.team-member img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    max-height: 280px;
+}
+
+.team-member h3, p {
+    margin: 0;
+    display: block;
+    background-color: rgba(216, 230, 226, 0.8);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+}
+
+
+.team-info {
+    padding: 10px 0px;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 50px;
+    font-size: 0.85rem;
+    padding: 20px;
+}
